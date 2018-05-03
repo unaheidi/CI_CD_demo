@@ -4,10 +4,10 @@
 set -e
 
 # Delete the old repo
-rm -rf /home/ubuntu/hapiBoilerPlate/
+rm -rf /home/ubuntu/ci_cd_demo/
 
 # clone the repo again
-git clone git@gitlab.com:abhinavdhasmana/hapiBoilerPlate.git
+git clone https://gitlab.com/abhinavdhasmana/ci_cd_demo.git
 
 #source the nvm file. In an non
 #If you are not using nvm, add the actual path like
@@ -25,7 +25,7 @@ npm install pm2 -g
 # starting pm2 daemon
 pm2 status
 
-cd /home/ubuntu/hapiBoilerPlate
+cd /home/ubuntu/ci_cd_demo
 
 #install npm packages
 echo "Running npm install"
