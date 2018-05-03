@@ -27,4 +27,4 @@ echo "Running npm install"
 npm install
 
 #Restart the node server
-npm run restart
+npm start
