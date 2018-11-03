@@ -26,6 +26,6 @@ deploy:dev:
   script:
     - bash deploy/deploy.sh
   only:
-    - master
+    - suling-01
 
 
