@@ -4,7 +4,7 @@
 set -e
 
 # Delete the old repo
-rm -rf /home/ubuntu/ci_cd_demo/
+rm -rf /home/ec2-user/ci_cd_demo/
 
 # clone the repo again
 git clone https://gitlab.com/abhinavdhasmana/ci_cd_demo.git
@@ -12,7 +12,8 @@ git clone https://gitlab.com/abhinavdhasmana/ci_cd_demo.git
 #source the nvm file. In an non
 #If you are not using nvm, add the actual path like
 # PATH=/home/ubuntu/node/bin:$PATH
-source /home/ubuntu/.nvm/nvm.sh
+#source /home/ubuntu/.nvm/nvm.sh
+
 
 # stop the previous pm2
 pm2 kill
@@ -25,7 +26,7 @@ npm install pm2 -g
 # starting pm2 daemon
 pm2 status
 
-cd /home/ubuntu/ci_cd_demo
+cd /home/ec2-user/ci_cd_demo
 
 #install npm packages
 echo "Running npm install"
