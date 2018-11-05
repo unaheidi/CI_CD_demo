@@ -3,7 +3,7 @@ const routes = require('./routes/');
 
 // Create a server with a host and port
 const server = Hapi.server({
-  host: 'localhost',
+  host: 'ec2-54-180-88-63.ap-northeast-2.compute.amazonaws.com',
   port: 8080,
 });
 
