@@ -9,6 +9,7 @@ rm -rf /home/ec2-user/ci_cd_demo/
 # clone the repo again
 git clone https://gitlab.com/suling/ci_cd_demo.git
 
+echo "Suling Clone done!!!"
 
 #source the nvm file. In an non
 #If you are not using nvm, add the actual path like
