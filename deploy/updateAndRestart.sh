@@ -19,7 +19,7 @@ echo "Suling Clone done!!!"
 
 # stop the previous pm2
 pm2 kill
-npm remove pm2 -g
+#npm remove pm2 -g
 
 
 #pm2 needs to be installed globally as we would be deleting the repo folder.
